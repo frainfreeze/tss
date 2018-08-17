@@ -60,27 +60,120 @@ $(document).ready(function(){initNavTree('main_8cpp.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">main.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
+<code>#include &lt;array&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;stdexcept&gt;</code><br />
+<code>#include &lt;sys/wait.h&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
 </div>
 <p><a href="main_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a880d49be9af19c4036be78ca0a6823e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a880d49be9af19c4036be78ca0a6823e2">tss_cd</a> (std::pair&lt; std::string, std::string &gt; args)</td></tr>
+<tr class="memdesc:a880d49be9af19c4036be78ca0a6823e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builtin command: change directory.  <a href="#a880d49be9af19c4036be78ca0a6823e2">More...</a><br /></td></tr>
+<tr class="separator:a880d49be9af19c4036be78ca0a6823e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fcf5633ecfdb2e72244ef323eb3a883"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a8fcf5633ecfdb2e72244ef323eb3a883">tss_help</a> ()</td></tr>
+<tr class="memdesc:a8fcf5633ecfdb2e72244ef323eb3a883"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builtin command: print help.  <a href="#a8fcf5633ecfdb2e72244ef323eb3a883">More...</a><br /></td></tr>
+<tr class="separator:a8fcf5633ecfdb2e72244ef323eb3a883"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26b4adaf108b977a1aa6e935709f5761"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a26b4adaf108b977a1aa6e935709f5761">tss_exit</a> ()</td></tr>
+<tr class="memdesc:a26b4adaf108b977a1aa6e935709f5761"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builtin command: exit.  <a href="#a26b4adaf108b977a1aa6e935709f5761">More...</a><br /></td></tr>
+<tr class="separator:a26b4adaf108b977a1aa6e935709f5761"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a5deaa5bc07f9b8f535c09cb9713fb0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a0a5deaa5bc07f9b8f535c09cb9713fb0">get_path</a> ()</td></tr>
 <tr class="memdesc:a0a5deaa5bc07f9b8f535c09cb9713fb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get system path using getenv("PATH")  <a href="#a0a5deaa5bc07f9b8f535c09cb9713fb0">More...</a><br /></td></tr>
 <tr class="separator:a0a5deaa5bc07f9b8f535c09cb9713fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
-<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main entry point.  <a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">More...</a><br /></td></tr>
-<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2deaf0f63ca4a73a37b86d05678fb46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#aa2deaf0f63ca4a73a37b86d05678fb46">main_loop</a> ()</td></tr>
+<tr class="memdesc:aa2deaf0f63ca4a73a37b86d05678fb46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main loop: get input, parse, execute.  <a href="#aa2deaf0f63ca4a73a37b86d05678fb46">More...</a><br /></td></tr>
+<tr class="separator:aa2deaf0f63ca4a73a37b86d05678fb46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a922bb06cef95b8029c441308cbee6ece"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a922bb06cef95b8029c441308cbee6ece">parse</a> (std::string line)</td></tr>
+<tr class="memdesc:a922bb06cef95b8029c441308cbee6ece"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse user input.  <a href="#a922bb06cef95b8029c441308cbee6ece">More...</a><br /></td></tr>
+<tr class="separator:a922bb06cef95b8029c441308cbee6ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1d92c53a17d0532b755db3c40bbb867"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#aa1d92c53a17d0532b755db3c40bbb867">exec</a> (std::string cmd)</td></tr>
+<tr class="memdesc:aa1d92c53a17d0532b755db3c40bbb867"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute command and get output back.  <a href="#aa1d92c53a17d0532b755db3c40bbb867">More...</a><br /></td></tr>
+<tr class="separator:aa1d92c53a17d0532b755db3c40bbb867"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add24f707b143cc55696f464e58a17140"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#add24f707b143cc55696f464e58a17140">execute</a> (std::string args)</td></tr>
+<tr class="memdesc:add24f707b143cc55696f464e58a17140"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute arguments.  <a href="#add24f707b143cc55696f464e58a17140">More...</a><br /></td></tr>
+<tr class="separator:add24f707b143cc55696f464e58a17140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
+<tr class="memdesc:a3c04138a5bfe5d72780bb7e82a18e627"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main entry point.  <a href="#a3c04138a5bfe5d72780bb7e82a18e627">More...</a><br /></td></tr>
+<tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ad4b11692e096ee669bbd89bf1df98ad4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ad4b11692e096ee669bbd89bf1df98ad4">whoami</a> = <a class="el" href="main_8cpp.html#aa1d92c53a17d0532b755db3c40bbb867">exec</a>(&quot;whoami&quot;)</td></tr>
+<tr class="separator:ad4b11692e096ee669bbd89bf1df98ad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7273a7e83cfd952262d941e5bfc73c2"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ac7273a7e83cfd952262d941e5bfc73c2">hostname</a> = <a class="el" href="main_8cpp.html#aa1d92c53a17d0532b755db3c40bbb867">exec</a>(&quot;hostname&quot;)</td></tr>
+<tr class="separator:ac7273a7e83cfd952262d941e5bfc73c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="aa1d92c53a17d0532b755db3c40bbb867"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1d92c53a17d0532b755db3c40bbb867">&#9670;&nbsp;</a></span>exec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string exec </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>cmd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Execute command and get output back. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td>command to execute </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>command ouput </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00182">182</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+
+</div>
+</div>
+<a id="add24f707b143cc55696f464e58a17140"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add24f707b143cc55696f464e58a17140">&#9670;&nbsp;</a></span>execute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int execute </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Execute arguments. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">std::string</td><td>args: arguments to execute </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>status </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00174">174</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a0a5deaa5bc07f9b8f535c09cb9713fb0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0a5deaa5bc07f9b8f535c09cb9713fb0">&#9670;&nbsp;</a></span>get_path()</h2>
 
@@ -99,12 +192,12 @@ Functions</h2></td></tr>
 <p>Get system path using getenv("PATH") </p>
 <dl class="section return"><dt>Returns</dt><dd>PATH as string </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00009">9</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00126">126</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
 
 </div>
 </div>
-<a id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&nbsp;</a></span>main()</h2>
+<a id="a3c04138a5bfe5d72780bb7e82a18e627"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c04138a5bfe5d72780bb7e82a18e627">&#9670;&nbsp;</a></span>main()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -112,8 +205,19 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int main </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>argv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -128,7 +232,163 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>status code </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00019">19</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00094">94</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa2deaf0f63ca4a73a37b86d05678fb46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2deaf0f63ca4a73a37b86d05678fb46">&#9670;&nbsp;</a></span>main_loop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void main_loop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Main loop: get input, parse, execute. </p>
+
+<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00133">133</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a922bb06cef95b8029c441308cbee6ece"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a922bb06cef95b8029c441308cbee6ece">&#9670;&nbsp;</a></span>parse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string parse </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>line</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parse user input. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">std::string</td><td>line: user input </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>arguments </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00167">167</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a880d49be9af19c4036be78ca0a6823e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a880d49be9af19c4036be78ca0a6823e2">&#9670;&nbsp;</a></span>tss_cd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tss_cd </td>
+          <td>(</td>
+          <td class="paramtype">std::pair&lt; std::string, std::string &gt;&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Builtin command: change directory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>List of args. args[0] is "cd". args[1] is the directory. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Always returns 1, to continue executing. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00108">108</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a26b4adaf108b977a1aa6e935709f5761"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26b4adaf108b977a1aa6e935709f5761">&#9670;&nbsp;</a></span>tss_exit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tss_exit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Builtin command: exit. </p>
+<dl class="section return"><dt>Returns</dt><dd>Always returns 0, to terminate execution. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00118">118</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8fcf5633ecfdb2e72244ef323eb3a883"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fcf5633ecfdb2e72244ef323eb3a883">&#9670;&nbsp;</a></span>tss_help()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tss_help </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Builtin command: print help. </p>
+<dl class="section return"><dt>Returns</dt><dd>Always returns 1, to continue executing. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00113">113</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ac7273a7e83cfd952262d941e5bfc73c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7273a7e83cfd952262d941e5bfc73c2">&#9670;&nbsp;</a></span>hostname</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string hostname = <a class="el" href="main_8cpp.html#aa1d92c53a17d0532b755db3c40bbb867">exec</a>(&quot;hostname&quot;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00085">85</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad4b11692e096ee669bbd89bf1df98ad4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4b11692e096ee669bbd89bf1df98ad4">&#9670;&nbsp;</a></span>whoami</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string whoami = <a class="el" href="main_8cpp.html#aa1d92c53a17d0532b755db3c40bbb867">exec</a>(&quot;whoami&quot;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00084">84</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
 
 </div>
 </div>
