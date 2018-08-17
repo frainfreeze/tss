@@ -1,0 +1,2 @@
+# build docs
+doxygen Doxyfile
