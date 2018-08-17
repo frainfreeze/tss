@@ -3,7 +3,8 @@ This is learning project released in public domain. Comments and
 improvement suggestions are more than welcome, leave them [here](https://github.com/frainfreeze/tss/issues). 
 
 For the project I used `g++`, `make` and `doxygen`. To get those run `sudo apt-get install build-essential doxygen`  on apt based systems.
-To build and start the shell run `./build-run.sh`, to build shell and docs run `make`, to clean everything run `make clean clean-docs`
+To build and start the shell run `./build-run.sh`, to build shell and docs run `make`, to clean everything run `make clean clean-docs`.
+To build documentation run `make docs`, you can find output in the docs folder or [here](https://frainfreeze.github.io/tss/).
 
 
 ## Shell in a nutshell
