@@ -1,4 +1,12 @@
 # tss - Tom's Simple Shell
+This is learning project released in public domain. Comments and 
+improvement suggestions are more than welcome, leave them [here](https://github.com/frainfreeze/tss/issues). 
+
+For the project I used `g++`, `make` and `doxygen`. To get those run `sudo apt-get install build-essential doxygen`  on apt based systems.
+To build and start the shell run `./build-run.sh`, to build shell and docs run `make`, to clean everything run `make clean clean-docs`
+
+
+## Shell in a nutshell
 A shell or command-line interpreter is a user interface for access to an operating system's 
 services. In general, operating system shells use either a command-line interface (CLI) 
 or graphical user interface (GUI), depending on a computer's role and particular 
@@ -7,7 +15,6 @@ system kernel.
 
 > Although most users think of the shell as an interactive command interpreter, it is really a programming language in which each statement runs a command. Because it must satisfy both the interactive and programming aspects of command execution, it is a strange language, shaped as much by history as by design. — Brian Kernighan & Rob Pike
 
-## Shell in a nutshell
 In it's essence shell is a Read–Eval–Print Loop (REPL), a simple, interactive computer 
 programming environment that takes single user inputs (i.e. single expressions), evaluates 
 them, and returns the result to the user.
