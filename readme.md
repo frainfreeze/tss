@@ -20,6 +20,10 @@ Typical shell workflow is as follows:
     - Execution
 - Terminate: executes any shutdown commands, free up any memory, and terminate
 
+## Startup
+`Compare the output of echo $HOME in your shell to your regular shell. Your regular shell treats tokens beginning with $ specially: it looks them up by name in the environment, and substitutes them in the command. The `getenv` function looks up a variable in the environment. This can be handled during or after parsing a command.`
+
+
 ## System calls
 The way our programs talk to the kernel is through system calls. 
 These are operations we can tell the kernel to do on our behalf. 
@@ -100,6 +104,26 @@ sending program is held in the buffer. When the receiving program is ready to re
 then next program in the pipeline reads from the buffer. In Linux, the size of the buffer 
 is 65536 bytes (64KiB).
 
+https://github.com/kamalmarhubi/shell-workshop#6-pipelines
++ IO redirection to/from files: https://github.com/kamalmarhubi/shell-workshop#2-io-redirection-tofrom-files
+
+
+## Terminate
+`Compare what happens when you hit ^C (control-C) between your shell and your regular shell. ^C 
+sends a signal to your process, in this case `SIGINT`. Signals interrupt the normal execution of 
+your program. By default, this aborts the process. To prevent that, we can register a signal 
+handler function to be called when `SIGINT` is received, or decide to ignore it.`
+
+
+## Todo:
+### Globbing
+Compare the output of wc -c * between your shell and your regular shell. Expanding the wildcard * 
+is done by the shell before passing arguments to the child. The glob function in the <glob.h> 
+standard header will be useful.
+
+### Running a command in the background
+In your regular shell, if you end a command with &, it runs in the background. The command will 
+run, but the shell will not block while it does. Ie, it does not wait on the child process.
 
 ## Refs:
 - https://en.wikipedia.org/wiki/Shell_(computing)
