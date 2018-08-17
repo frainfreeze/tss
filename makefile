@@ -2,6 +2,8 @@ CXX=g++
 CXXFLAGS=-Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic
 
 all: docs build
+	@echo '<html><head><meta http-equiv="refresh" content="0; url=./html/index.html" /></head><body></body></html>' > docs/index.html
+
 
 build:
 	$(CXX) -o main-out main.cpp
