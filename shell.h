@@ -24,10 +24,10 @@ std::string get_path(){
     @param std::string line: user input
     @return arguments
 */
-std::string parse(std::string line)
+std::string parse(std::string input)
 {
     /// \todo Parse input
-    return line;
+    return input;
 }
 
 
@@ -63,6 +63,9 @@ int execute(std::string args)
 {
     if(args=="exit"){
         return 0;
+    }
+    if(args=="help"){
+        return builtins::funcMap["help"]("");
     }
 
     std::cout << exec(args);
