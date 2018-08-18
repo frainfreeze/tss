@@ -1,5 +1,5 @@
 <map id="main_loop" name="main_loop">
 <area shape="rect" id="node2" href="$namespaceshell.html#a5504f32f74bfa0b19569d1fc48ea7c37" title="Execute arguments. " alt="" coords="285,22,371,49"/>
-<area shape="rect" id="node3" href="$namespaceshell.html#a80327e55306dc78589cf1583119873e9" title="Parse user input. " alt="" coords="141,22,231,49"/>
+<area shape="rect" id="node3" href="$namespaceshell.html#a2ba99f3ded71133efe5a5e806195c339" title="Parse user input. " alt="" coords="141,22,231,49"/>
 <area shape="rect" id="node4" href="$namespaceshell.html#aacb3598631a8e4bcff325d06449a3a80" title="Handle builtin and system commands execution. " alt="" coords="135,73,237,99"/>
 </map>

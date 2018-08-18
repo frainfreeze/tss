@@ -60,7 +60,8 @@ $(document).ready(function(){initNavTree('namespacebuiltins.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">builtins Namespace Reference</div>  </div>
 </div><!--header-->
@@ -68,12 +69,21 @@ $(document).ready(function(){initNavTree('namespacebuiltins.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:acbac46928db410b82b832ea395c95d12"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuiltins.html#acbac46928db410b82b832ea395c95d12">tss_get</a> ()</td></tr>
+<tr class="memdesc:acbac46928db410b82b832ea395c95d12"><td class="mdescLeft">&#160;</td><td class="mdescRight">internal helper function  <a href="#acbac46928db410b82b832ea395c95d12">More...</a><br /></td></tr>
+<tr class="separator:acbac46928db410b82b832ea395c95d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec0aaf18f570691b519bd40bdf8e10d8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuiltins.html#aec0aaf18f570691b519bd40bdf8e10d8">tss_cd</a> (std::string dir)</td></tr>
 <tr class="memdesc:aec0aaf18f570691b519bd40bdf8e10d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builtin command: change directory.  <a href="#aec0aaf18f570691b519bd40bdf8e10d8">More...</a><br /></td></tr>
 <tr class="separator:aec0aaf18f570691b519bd40bdf8e10d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa40e3fb1207a4fbdf2e133fbd85426cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuiltins.html#aa40e3fb1207a4fbdf2e133fbd85426cb">tss_help</a> ()</td></tr>
-<tr class="memdesc:aa40e3fb1207a4fbdf2e133fbd85426cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builtin command: print help.  <a href="#aa40e3fb1207a4fbdf2e133fbd85426cb">More...</a><br /></td></tr>
-<tr class="separator:aa40e3fb1207a4fbdf2e133fbd85426cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad033c6cd3a0c85f7a65d29c336736a68"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuiltins.html#ad033c6cd3a0c85f7a65d29c336736a68">tss_help</a> (std::string name)</td></tr>
+<tr class="memdesc:ad033c6cd3a0c85f7a65d29c336736a68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builtin command: print help.  <a href="#ad033c6cd3a0c85f7a65d29c336736a68">More...</a><br /></td></tr>
+<tr class="separator:ad033c6cd3a0c85f7a65d29c336736a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a5219da2cf7836ab36d5dee90ef19e9d3"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::function&lt; int(std::string)&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuiltins.html#a5219da2cf7836ab36d5dee90ef19e9d3">funcMap</a></td></tr>
+<tr class="memdesc:a5219da2cf7836ab36d5dee90ef19e9d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">builtin shell commands functions map  <a href="#a5219da2cf7836ab36d5dee90ef19e9d3">More...</a><br /></td></tr>
+<tr class="separator:a5219da2cf7836ab36d5dee90ef19e9d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>builtin shell commands </p>
@@ -103,18 +113,18 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Always returns 1, to continue executing. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="builtins_8h_source.html#l00021">21</a> of file <a class="el" href="builtins_8h_source.html">builtins.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="builtins_8h_source.html#l00026">26</a> of file <a class="el" href="builtins_8h_source.html">builtins.h</a>.</p>
 
 </div>
 </div>
-<a id="aa40e3fb1207a4fbdf2e133fbd85426cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa40e3fb1207a4fbdf2e133fbd85426cb">&#9670;&nbsp;</a></span>tss_help()</h2>
+<a id="acbac46928db410b82b832ea395c95d12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbac46928db410b82b832ea395c95d12">&#9670;&nbsp;</a></span>tss_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void builtins::tss_help </td>
+          <td class="memname">std::string builtins::tss_get </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -122,10 +132,71 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Builtin command: print help. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>List builtins </dd></dl>
+<p>internal helper function </p>
+<dl class="section return"><dt>Returns</dt><dd>List of builting functions </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="builtins_8h_source.html#l00030">30</a> of file <a class="el" href="builtins_8h_source.html">builtins.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="builtins_8h_source.html#l00056">56</a> of file <a class="el" href="builtins_8h_source.html">builtins.h</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacebuiltins_acbac46928db410b82b832ea395c95d12_icgraph.png" border="0" usemap="#namespacebuiltins_acbac46928db410b82b832ea395c95d12_icgraph" alt=""/></div>
+<map name="namespacebuiltins_acbac46928db410b82b832ea395c95d12_icgraph" id="namespacebuiltins_acbac46928db410b82b832ea395c95d12_icgraph">
+<area shape="rect" id="node2" href="namespacebuiltins.html#ad033c6cd3a0c85f7a65d29c336736a68" title="Builtin command: print help. " alt="" coords="168,5,288,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad033c6cd3a0c85f7a65d29c336736a68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad033c6cd3a0c85f7a65d29c336736a68">&#9670;&nbsp;</a></span>tss_help()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int builtins::tss_help </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Builtin command: print help. </p>
+<dl class="section return"><dt>Returns</dt><dd>Always returns 1 to continue execution. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>Help for individual commands </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="builtins_8h_source.html#l00036">36</a> of file <a class="el" href="builtins_8h_source.html">builtins.h</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacebuiltins_ad033c6cd3a0c85f7a65d29c336736a68_cgraph.png" border="0" usemap="#namespacebuiltins_ad033c6cd3a0c85f7a65d29c336736a68_cgraph" alt=""/></div>
+<map name="namespacebuiltins_ad033c6cd3a0c85f7a65d29c336736a68_cgraph" id="namespacebuiltins_ad033c6cd3a0c85f7a65d29c336736a68_cgraph">
+<area shape="rect" id="node2" href="namespacebuiltins.html#acbac46928db410b82b832ea395c95d12" title="internal helper function " alt="" coords="173,5,288,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a5219da2cf7836ab36d5dee90ef19e9d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5219da2cf7836ab36d5dee90ef19e9d3">&#9670;&nbsp;</a></span>funcMap</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;std::string, std::function&lt;int(std::string)&gt; &gt; builtins::funcMap</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">         {{ <span class="stringliteral">&quot;cd&quot;</span>, <a class="code" href="namespacebuiltins.html#aec0aaf18f570691b519bd40bdf8e10d8">tss_cd</a>},</div><div class="line">          { <span class="stringliteral">&quot;help&quot;</span>, <a class="code" href="namespacebuiltins.html#ad033c6cd3a0c85f7a65d29c336736a68">tss_help</a>}</div><div class="line">         }</div><div class="ttc" id="namespacebuiltins_html_ad033c6cd3a0c85f7a65d29c336736a68"><div class="ttname"><a href="namespacebuiltins.html#ad033c6cd3a0c85f7a65d29c336736a68">builtins::tss_help</a></div><div class="ttdeci">int tss_help(std::string name)</div><div class="ttdoc">Builtin command: print help. </div><div class="ttdef"><b>Definition:</b> <a href="builtins_8h_source.html#l00036">builtins.h:36</a></div></div>
+<div class="ttc" id="namespacebuiltins_html_aec0aaf18f570691b519bd40bdf8e10d8"><div class="ttname"><a href="namespacebuiltins.html#aec0aaf18f570691b519bd40bdf8e10d8">builtins::tss_cd</a></div><div class="ttdeci">int tss_cd(std::string dir)</div><div class="ttdoc">Builtin command: change directory. </div><div class="ttdef"><b>Definition:</b> <a href="builtins_8h_source.html#l00026">builtins.h:26</a></div></div>
+</div><!-- fragment -->
+<p>builtin shell commands functions map </p>
+
+<p class="definition">Definition at line <a class="el" href="builtins_8h_source.html#l00051">51</a> of file <a class="el" href="builtins_8h_source.html">builtins.h</a>.</p>
 
 </div>
 </div>
