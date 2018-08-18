@@ -6,6 +6,9 @@ For the project I used `g++`, `make` and `doxygen`. To get those run `sudo apt-g
 To build and start the shell run `./build-run.sh`, to build shell and docs run `make`, to clean everything run `make clean clean-docs`.
 To build documentation run `make docs`, you can find output in the docs folder or [here](https://frainfreeze.github.io/tss/).
 
+<p align="center">
+  <img src="http://i.imgur.com/zYGIGeH.png">
+</p>
 
 ## Shell in a nutshell
 A shell or command-line interpreter is a user interface for access to an operating system's 
