@@ -6,14 +6,14 @@ all: docs build
 
 
 build:
-	$(CXX) -o main-out main.cpp
+	$(CXX) -o tss main.cpp
 
 docs:
 	doxygen Doxyfile
 
 clean:
 	rm -f *.o
-	rm -f main-out
+	rm -f tss
 
 clean-docs:
 	rm -rf docs

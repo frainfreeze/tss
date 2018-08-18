@@ -2,6 +2,16 @@ var NAVTREE =
 [
   [ "tss", "index.html", [
     [ "tss - Tom's Simple Shell", "index.html", null ],
+    [ "Todo List", "todo.html", null ],
+    [ "Namespaces", null, [
+      [ "Namespace List", "namespaces.html", "namespaces" ],
+      [ "Namespace Members", "namespacemembers.html", [
+        [ "All", "namespacemembers.html", null ],
+        [ "Functions", "namespacemembers_func.html", null ],
+        [ "Enumerations", "namespacemembers_enum.html", null ],
+        [ "Enumerator", "namespacemembers_eval.html", null ]
+      ] ]
+    ] ],
     [ "Files", null, [
       [ "File List", "files.html", "files" ],
       [ "File Members", "globals.html", [
@@ -15,7 +25,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"files.html"
+"builtins_8h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

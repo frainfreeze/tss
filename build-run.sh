@@ -1,2 +1,2 @@
 make build
-./main-out
+xterm -e ./tss

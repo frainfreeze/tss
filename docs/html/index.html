@@ -82,7 +82,7 @@ $(document).ready(function(){initNavTree('index.html','');});
 <li>Terminate: executes any shutdown commands, free up any memory, and terminate</li>
 </ul>
 <h2>Startup</h2>
-<p><code>Compare the output of echo $HOME in your shell to your regular shell. Your regular shell treats tokens beginning with $ specially: it looks them up by name in the environment, and substitutes them in the command. The</code>getenv<code>function looks up a variable in the environment. This can be handled during or after parsing a command.</code></p>
+<p>config</p>
 <h2>System calls</h2>
 <p>The way our programs talk to the kernel is through system calls. These are operations we can tell the kernel to do on our behalf. Examples include:</p><ul>
 <li>opening files (<code>open</code>)</li>
@@ -107,11 +107,11 @@ $(document).ready(function(){initNavTree('index.html','');});
 <p>To avoid deadlock and exploit parallelism, the Unix process with one or more new pipes will then, generally, call <code>fork()</code> to create new processes. Each process will then close the end(s) of the pipe that it will not be using before producing or consuming any data. Alternatively, a process might create a new thread and use the pipe to communicate between them.</p>
 <p>Named pipes may also be created using <code>mkfifo()</code> or <code>mknod()</code> and then presented as the input or output file to programs as they are invoked. They allow multi-path pipes to be created, and are especially effective when combined with standard error redirection, or with tee.</p>
 <p>In most Unix-like systems, all processes of a pipeline are started at the same time, with their streams appropriately connected, and managed by the scheduler together with all other processes running on the machine. An important aspect of this, setting Unix pipes apart from other pipe implementations, is the concept of buffering: for example a sending program may produce 5000 bytes per second, and a receiving program may only be able to accept 100 bytes per second, but no data is lost. Instead, the output of the sending program is held in the buffer. When the receiving program is ready to read data, then next program in the pipeline reads from the buffer. In Linux, the size of the buffer is 65536 bytes (64KiB).</p>
-<p><a href="https://github.com/kamalmarhubi/shell-workshop#6-pipelines">https://github.com/kamalmarhubi/shell-workshop#6-pipelines</a></p><ul>
+<ul>
 <li>IO redirection to/from files: <a href="https://github.com/kamalmarhubi/shell-workshop#2-io-redirection-tofrom-files">https://github.com/kamalmarhubi/shell-workshop#2-io-redirection-tofrom-files</a></li>
 </ul>
 <h2>Terminate</h2>
-<p><code>Compare what happens when you hit ^C (control-C) between your shell and your regular shell. ^C sends a signal to your process, in this case</code>SIGINT`. Signals interrupt the normal execution of your program. By default, this aborts the process. To prevent that, we can register a signal handler function to be called when <code>SIGINT</code> is received, or decide to ignore it.`</p>
+<p>Handle <code>SIGINT</code> <a href="https://stackoverflow.com/questions/1641182/how-can-i-catch-a-ctrl-c-event-c">https://stackoverflow.com/questions/1641182/how-can-i-catch-a-ctrl-c-event-c</a></p>
 <h2>Todo:</h2>
 <h3>Globbing</h3>
 <p>Compare the output of wc -c * between your shell and your regular shell. Expanding the wildcard * is done by the shell before passing arguments to the child. The glob function in the &lt;glob.h&gt; standard header will be useful.</p>

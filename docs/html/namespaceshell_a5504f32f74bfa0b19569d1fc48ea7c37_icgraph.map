@@ -1,0 +1,5 @@
+<map id="shell::exec" name="shell::exec">
+<area shape="rect" id="node2" href="$main_8cpp.html#aa2deaf0f63ca4a73a37b86d05678fb46" title="Main loop: get input, parse, execute. " alt="" coords="289,5,371,32"/>
+<area shape="rect" id="node4" href="$namespaceshell.html#aacb3598631a8e4bcff325d06449a3a80" title="Handle builtin and system commands execution. " alt="" coords="139,31,241,57"/>
+<area shape="rect" id="node3" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main entry point. " alt="" coords="419,5,469,32"/>
+</map>
