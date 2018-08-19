@@ -39,8 +39,7 @@ void main_loop(){
                   << Color::FG_BLUE << pwd << Color::FG_DEFAULT << "$ ";
 
         std::getline(std::cin, line);
-        args = shell::parse(line);
-        status = shell::execute(args);     
+        status = shell::parse(line);
         
         line.clear();
         args.clear();
@@ -59,11 +58,11 @@ int main(int argc, char **argv)
 {
     /// \todo Handle sh scripts as cmd arg
 
-    // setup
+    /// \todo setup/config
     
     main_loop();
     
-    // shutdown/cleanup.
+    /// \todo shutdown/cleanup.
 
     return EXIT_SUCCESS;
 }

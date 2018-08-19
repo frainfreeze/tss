@@ -41,10 +41,9 @@ var NAVTREEINDEX0 =
 "namespaceshell.html":[2,0,2],
 "pages.html":[],
 "shell_8h.html":[3,0,3],
-"shell_8h.html#a1bc8f1c5f9059783150b26e1e09f43f7":[3,0,3,2],
-"shell_8h.html#a2ba99f3ded71133efe5a5e806195c339":[3,0,3,3],
+"shell_8h.html#a1bc8f1c5f9059783150b26e1e09f43f7":[3,0,3,1],
+"shell_8h.html#a430da98671f725e6edb5518e5472c815":[3,0,3,2],
 "shell_8h.html#a5504f32f74bfa0b19569d1fc48ea7c37":[3,0,3,0],
-"shell_8h.html#aacb3598631a8e4bcff325d06449a3a80":[3,0,3,1],
 "shell_8h_source.html":[3,0,3],
 "todo.html":[1]
 };

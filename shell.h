@@ -19,17 +19,6 @@ std::string get_path(){
     return getenv("PATH");
 }
 
-/**
-    @brief Parse user input.
-    @param std::string line: user input
-    @return arguments
-*/
-std::string parse(std::string input)
-{
-    /// \todo Parse input
-    return input;
-}
-
 
 /**
     @brief Execute arguments
@@ -37,6 +26,7 @@ std::string parse(std::string input)
     @return command ouput
  */
 std::string exec(std::string cmd) {
+    // http://man7.org/linux/man-pages/man3/popen.3.html
     std::array<char, 128> buffer;
     std::string result;
     std::shared_ptr<FILE> pipe(popen(cmd.c_str(), "r"), pclose);
@@ -51,28 +41,33 @@ std::string exec(std::string cmd) {
     }
     
     return result;
+    /// \todo Ignores stderr
 }
 
 
 /**
-    @brief Handle builtin and system commands execution.
-    @param std::string args: arguments to execute
+    @brief Parse user input.
+    @param std::string line: user input
     @return status
 */
-int execute(std::string args)
+int parse(std::string input)
 {
-    if(args=="exit"){
+    std::string arg = input.substr(0, input.find(" "));
+    if(arg=="exit"){
         return 0;
-    }
-    if(args=="help"){
+    } 
+    else if(arg=="help"){
         return builtins::funcMap["help"]("");
+    } 
+    else if(arg=="cd"){
+        builtins::tss_cd(input.substr(input.find_first_of(" \t")+1));
+    } 
+    else {
+        std::cout << exec(input);   
+        return 1; 
     }
 
-    std::cout << exec(args);
-
-    /// \todo Execution management
-
-    return 1;
+    /// \todo Actual input parsing
 }
 
 }

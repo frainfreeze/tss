@@ -71,15 +71,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a1bc8f1c5f9059783150b26e1e09f43f7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshell.html#a1bc8f1c5f9059783150b26e1e09f43f7">get_path</a> ()</td></tr>
 <tr class="memdesc:a1bc8f1c5f9059783150b26e1e09f43f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get system path using getenv("PATH")  <a href="#a1bc8f1c5f9059783150b26e1e09f43f7">More...</a><br /></td></tr>
 <tr class="separator:a1bc8f1c5f9059783150b26e1e09f43f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ba99f3ded71133efe5a5e806195c339"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshell.html#a2ba99f3ded71133efe5a5e806195c339">parse</a> (std::string input)</td></tr>
-<tr class="memdesc:a2ba99f3ded71133efe5a5e806195c339"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse user input.  <a href="#a2ba99f3ded71133efe5a5e806195c339">More...</a><br /></td></tr>
-<tr class="separator:a2ba99f3ded71133efe5a5e806195c339"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5504f32f74bfa0b19569d1fc48ea7c37"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshell.html#a5504f32f74bfa0b19569d1fc48ea7c37">exec</a> (std::string cmd)</td></tr>
 <tr class="memdesc:a5504f32f74bfa0b19569d1fc48ea7c37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute arguments.  <a href="#a5504f32f74bfa0b19569d1fc48ea7c37">More...</a><br /></td></tr>
 <tr class="separator:a5504f32f74bfa0b19569d1fc48ea7c37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacb3598631a8e4bcff325d06449a3a80"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshell.html#aacb3598631a8e4bcff325d06449a3a80">execute</a> (std::string args)</td></tr>
-<tr class="memdesc:aacb3598631a8e4bcff325d06449a3a80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle builtin and system commands execution.  <a href="#aacb3598631a8e4bcff325d06449a3a80">More...</a><br /></td></tr>
-<tr class="separator:aacb3598631a8e4bcff325d06449a3a80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a430da98671f725e6edb5518e5472c815"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshell.html#a430da98671f725e6edb5518e5472c815">parse</a> (std::string input)</td></tr>
+<tr class="memdesc:a430da98671f725e6edb5518e5472c815"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse user input.  <a href="#a430da98671f725e6edb5518e5472c815">More...</a><br /></td></tr>
+<tr class="separator:a430da98671f725e6edb5518e5472c815"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a5504f32f74bfa0b19569d1fc48ea7c37"></a>
@@ -106,63 +103,17 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>command ouput </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>Ignores stderr </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="shell_8h_source.html#l00039">39</a> of file <a class="el" href="shell_8h_source.html">shell.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shell_8h_source.html#l00028">28</a> of file <a class="el" href="shell_8h_source.html">shell.h</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespaceshell_a5504f32f74bfa0b19569d1fc48ea7c37_icgraph.png" border="0" usemap="#namespaceshell_a5504f32f74bfa0b19569d1fc48ea7c37_icgraph" alt=""/></div>
 <map name="namespaceshell_a5504f32f74bfa0b19569d1fc48ea7c37_icgraph" id="namespaceshell_a5504f32f74bfa0b19569d1fc48ea7c37_icgraph">
-<area shape="rect" id="node2" href="main_8cpp.html#aa2deaf0f63ca4a73a37b86d05678fb46" title="Main loop: get input, parse, execute. " alt="" coords="289,5,371,32"/>
-<area shape="rect" id="node4" href="namespaceshell.html#aacb3598631a8e4bcff325d06449a3a80" title="Handle builtin and system commands execution. " alt="" coords="139,31,241,57"/>
-<area shape="rect" id="node3" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main entry point. " alt="" coords="419,5,469,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="aacb3598631a8e4bcff325d06449a3a80"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aacb3598631a8e4bcff325d06449a3a80">&#9670;&nbsp;</a></span>execute()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int shell::execute </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>args</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Handle builtin and system commands execution. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">std::string</td><td>args: arguments to execute </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>status </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>Execution management </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="shell_8h_source.html#l00062">62</a> of file <a class="el" href="shell_8h_source.html">shell.h</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespaceshell_aacb3598631a8e4bcff325d06449a3a80_cgraph.png" border="0" usemap="#namespaceshell_aacb3598631a8e4bcff325d06449a3a80_cgraph" alt=""/></div>
-<map name="namespaceshell_aacb3598631a8e4bcff325d06449a3a80_cgraph" id="namespaceshell_aacb3598631a8e4bcff325d06449a3a80_cgraph">
-<area shape="rect" id="node2" href="namespaceshell.html#a5504f32f74bfa0b19569d1fc48ea7c37" title="Execute arguments. " alt="" coords="156,5,241,32"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespaceshell_aacb3598631a8e4bcff325d06449a3a80_icgraph.png" border="0" usemap="#namespaceshell_aacb3598631a8e4bcff325d06449a3a80_icgraph" alt=""/></div>
-<map name="namespaceshell_aacb3598631a8e4bcff325d06449a3a80_icgraph" id="namespaceshell_aacb3598631a8e4bcff325d06449a3a80_icgraph">
-<area shape="rect" id="node2" href="main_8cpp.html#aa2deaf0f63ca4a73a37b86d05678fb46" title="Main loop: get input, parse, execute. " alt="" coords="156,5,237,32"/>
-<area shape="rect" id="node3" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main entry point. " alt="" coords="285,5,336,32"/>
+<area shape="rect" id="node2" href="main_8cpp.html#aa2deaf0f63ca4a73a37b86d05678fb46" title="Main loop: get input, parse, execute. " alt="" coords="276,5,357,32"/>
+<area shape="rect" id="node4" href="namespaceshell.html#a430da98671f725e6edb5518e5472c815" title="Parse user input. " alt="" coords="139,31,228,57"/>
+<area shape="rect" id="node3" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main entry point. " alt="" coords="405,5,456,32"/>
 </map>
 </div>
 
@@ -190,14 +141,14 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a2ba99f3ded71133efe5a5e806195c339"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ba99f3ded71133efe5a5e806195c339">&#9670;&nbsp;</a></span>parse()</h2>
+<a id="a430da98671f725e6edb5518e5472c815"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a430da98671f725e6edb5518e5472c815">&#9670;&nbsp;</a></span>parse()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::string shell::parse </td>
+          <td class="memname">int shell::parse </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>input</em></td><td>)</td>
@@ -213,15 +164,24 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>arguments </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>Parse input </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>status </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo:</a></b></dt><dd>Actual input parsing </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="shell_8h_source.html#l00027">27</a> of file <a class="el" href="shell_8h_source.html">shell.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shell_8h_source.html#l00053">53</a> of file <a class="el" href="shell_8h_source.html">shell.h</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceshell_a430da98671f725e6edb5518e5472c815_cgraph.png" border="0" usemap="#namespaceshell_a430da98671f725e6edb5518e5472c815_cgraph" alt=""/></div>
+<map name="namespaceshell_a430da98671f725e6edb5518e5472c815_cgraph" id="namespaceshell_a430da98671f725e6edb5518e5472c815_cgraph">
+<area shape="rect" id="node2" href="namespacebuiltins.html#aec0aaf18f570691b519bd40bdf8e10d8" title="Builtin command: change directory. " alt="" coords="143,5,253,32"/>
+<area shape="rect" id="node3" href="namespaceshell.html#a5504f32f74bfa0b19569d1fc48ea7c37" title="Execute arguments. " alt="" coords="155,56,241,83"/>
+</map>
+</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="namespaceshell_a2ba99f3ded71133efe5a5e806195c339_icgraph.png" border="0" usemap="#namespaceshell_a2ba99f3ded71133efe5a5e806195c339_icgraph" alt=""/></div>
-<map name="namespaceshell_a2ba99f3ded71133efe5a5e806195c339_icgraph" id="namespaceshell_a2ba99f3ded71133efe5a5e806195c339_icgraph">
+<div class="center"><img src="namespaceshell_a430da98671f725e6edb5518e5472c815_icgraph.png" border="0" usemap="#namespaceshell_a430da98671f725e6edb5518e5472c815_icgraph" alt=""/></div>
+<map name="namespaceshell_a430da98671f725e6edb5518e5472c815_icgraph" id="namespaceshell_a430da98671f725e6edb5518e5472c815_icgraph">
 <area shape="rect" id="node2" href="main_8cpp.html#aa2deaf0f63ca4a73a37b86d05678fb46" title="Main loop: get input, parse, execute. " alt="" coords="143,5,224,32"/>
 <area shape="rect" id="node3" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main entry point. " alt="" coords="272,5,323,32"/>
 </map>

@@ -138,3 +138,4 @@ run, but the shell will not block while it does. Ie, it does not wait on the chi
 - https://linux.die.net/man/1/bash
 - http://man7.org/linux/man-pages/dir_section_3.html
 - https://en.wikipedia.org/wiki/Pipeline_(Unix)
+- http://man7.org/linux/man-pages/man3/popen.3.html
